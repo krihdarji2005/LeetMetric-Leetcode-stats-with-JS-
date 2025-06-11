@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight";
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    min-height: 600px;
+    background: #178f91;
+    background: linear-gradient(0deg, rgba(23, 143, 145, 1) 0%, rgb(1, 69, 60) 100%);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.wrapper{
+    padding: 20px;
+}
+.card h2 {
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+    margin-top: -25px;
+
+}
+
+.userContainer {
+
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.userContainer p {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 2px;
+}
+
+.user-input-container {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.user-input-container input {
+    padding: 15px;
+    width: 290px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(4, 254, 241);
+}
+
+.user-input-container input:focus {
+    border: 2px solid rgb(0, 100, 65);
+    outline: none;
+}
+.user-input-container button {
+   
+    width: 90px;
+    background: #3285cd;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(7, 226, 255, 0.775);
+    transition: 0.2s ease;
+}
+
+.user-input-container button:hover {
+    background: #106e72;
+}
+ 
+.progress{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.progress-item{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+ 
+    border: 4px solid #00ffaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:conic-gradient(#00ffcc  var(--progress-degree), #003f3f  0)
+
+    /* background: conic-gradient(#128922 var(--progress-degree)),   #015d0e 0%; */
+}
+.stats-card{
+    /* width: 100%;
+    height: 320px;
+    background-color: aquamarine; */
+
+}
+
+.stats-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.stats-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #98fff8;
+    font-weight: 600;
+}
+#hero-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    background-color: #004749;
+    border-radius: 50%;
+   
+    right: 0;
+    
+    filter: blur(80px);
+    z-index: -10;
+   
+
+}
+#hero-1{
+    height: 30vw;
+    width: 30vw;
+    background-color: #004749;
+    
+    border-radius: 50%;
+ 
+    filter: blur(50px); 
+    position: absolute;
+    animation: anime-1 3s linear 0s infinite alternate;
+
+}
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#004749, rgb(1, 93, 95));
+    
+    border-radius: 50%;
+
+    filter: blur(15px); 
+    position: absolute;
+    animation: anime-2 5s linear 0s infinite alternate;
+}
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background:   linear-gradient(#004749, rgb(1, 93, 95));
+    
+    border-radius: 50%;
+    
+    filter: blur(25px); 
+    position: absolute;
+    animation: anime-1 5s linear 0s infinite alternate;
+
+
+}
+@keyframes anime-1 {
+    from{
+        transform: translate(55%,-5%);
+                             /*left ,right: */
+    }
+    to{
+        transform: translate(0%,10%);
+
+    }
+    
+}
+@keyframes anime-2 {
+    from{
+        transform: translate(5%,-5%);
+                             /*left ,right: */
+    }
+    to{
+        transform: translate(-20%,30%);
+
+    }
+    
+}
