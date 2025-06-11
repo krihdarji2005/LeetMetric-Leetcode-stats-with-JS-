@@ -5,7 +5,7 @@ LeetMetric is a dynamic web application that provides a beautiful visualization 
 A web application to visualize LeetCode statistics and progress for any user.
 
 ## 🔴 Live Demo
-[LeetMetric](https://[your-username].github.io/LeetMetric-Leetcode-stats)
+[LeetMetric](https://krihdarji2005.github.io/LeetMetric-Leetcode-stats-with-JS-/)
 
 ## Features
 - View solved problem statistics (Easy, Medium, Hard)
